@@ -31,14 +31,8 @@ def start_sniffer():
             print("TCP Socket Error occurred", se)
         elif 'udp' in se.strerror.lower():
             print("UDP Socket Error occurred", se)
-    # except FTP_Exception as fe:
-    #     print("FTP Socket Error occurred", fe)
-    # except ICMP_Exception as ie:
-    #     print("ICMP Socket Error occurred", ie)
-    # except HTTP_Exception as he:
-    #     print("HTTP Socket Error occurred", he)
-    # except HTTPS_Exception as hse:
-    #     print("HTTPS Socket Error occurred", hse)
+    except Exception as e:
+        print("Error Occured", e)
         
 
 if __name__ == '__main__':
